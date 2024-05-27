@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pique Blinders</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <div class="nav-mobile">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <svg>
+            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                Welcome to Pique Blinders
+            </text>
+        </svg>
+    </div>
+    <div class="maininfo">
+        <h1>
+            This is the official page of Pique Blinders. Here you can find all the information about Pique Blinders.
+        </h1>
+    </div>
+
+    <div class="button-container">
+        <button class="btn" onclick="showWirtOfTheDay()">Wirt of the Day</button>
+    </div>
+
+    <script>
+        function showWirtOfTheDay() {
+            alert("Wirt of the Day: Leon");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+body {
+    background-image: url(/mywebsite/img/backgroundimg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+  
+  nav {
+    padding: 1.5rem 2rem;
+    background-color: #222831;
+    color: #fff;
+  }
+  
+  .checkbtn {
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .nav-mobile {
+    display: none;
+  }
+  
+  #check:checked ~ .nav-mobile {
+    display: block;
+  }
+  
+  .nav-mobile {
+    position: absolute;
+    top: 4.5rem;
+    left: 0;
+    background: #222831;
+    z-index: 1;
+    width: 140px;
+  }
+  
+  .nav-mobile a {
+    color: #fff;
+    padding: 0.67rem 1.5rem;
+    display: block;
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .checkbtn {
+      display: block;
+      font-size: 5rem;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+    .nav-mobile {
+      top: 160px;
+      width: 100%;
+    }
+    .nav-mobile a {
+      font-size: 2rem;
+      padding: 2rem 3rem;
+    }
+  }
+  
+  @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+  
+  svg {
+    font-family: "Russo One", sans-serif;
+    width: 100%;
+    height: 100%;
+  }
+  
+  svg text {
+    animation: stroke 5s infinite alternate;
+    stroke-width: 2;
+    stroke: #365fa0;
+    font-size: 100px;
+  }
+  
+  @keyframes stroke {
+    0% {
+      fill: rgba(72, 138, 204, 0);
+      stroke: rgba(54, 95, 160, 1);
+      stroke-dashoffset: 25%;
+      stroke-dasharray: 0 50%;
+      stroke-width: 2;
+    }
+    70% {
+      fill: rgba(72, 138, 204, 0);
+      stroke: rgba(54, 95, 160, 1);
+    }
+    80% {
+      fill: rgba(72, 138, 204, 0);
+      stroke: rgba(54, 95, 160, 1);
+      stroke-width: 3;
+    }
+    100% {
+      fill: rgba(72, 138, 204, 1);
+      stroke: rgba(54, 95, 160, 0);
+      stroke-dashoffset: -25%;
+      stroke-dasharray: 50% 0;
+      stroke-width: 0;
+    }
+  }
+  
+  .wrapper {
+    background-color: #ffffff;
+  }
+  
+  .maininfo {
+    color: #000000;
+    text-align: center;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #9db0c5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
